@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MyPasswortManagerTest" time="0.039" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MyPasswortManagerTest" time="0.038" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/17.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/surefire/surefirebooter8268068002893773562.jar /Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/surefire 2021-12-03T11-05-56_339-jvmRun1 surefire17184547494161006356tmp surefire_011083682904445996650tmp"/>
+    <property name="sun.java.command" value="/Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/surefire/surefirebooter4623246045876408379.jar /Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/surefire 2021-12-03T12-52-57_405-jvmRun1 surefire17885604850756129430tmp surefire_06549925462465220935tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/test-classes:/Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/classes:/Users/jan/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/Users/jan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/jan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/jan/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:/Users/jan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/jan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/jan/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/jan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/surefire/surefirebooter8268068002893773562.jar"/>
+    <property name="surefire.real.class.path" value="/Users/jan/Documents/NeueFische/IntelliJ/Aufgabe-2021-12-03-Password/target/surefire/surefirebooter4623246045876408379.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.1+0"/>
@@ -55,5 +55,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldCalculateTwo" classname="MyPasswortManagerTest" time="0.025"/>
+  <testcase name="shouldCalculateTwo" classname="MyPasswortManagerTest" time="0.023"/>
 </testsuite>
