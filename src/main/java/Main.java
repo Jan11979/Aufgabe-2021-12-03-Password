@@ -5,22 +5,20 @@ public class Main {
         MyPasswortManager appPassword = new MyPasswortManager( MyPasswortManager.SECURITY_MODE_NO );
 
         appPassword.setSecurityMode(MyPasswortManager.SECURITY_MODE_STRONG);
-    //    appPassword.setPasswort("BesseresPasswort");
-    //    appPassword.setPasswort("abc123");
-    //    appPassword.setPasswort("Besseres123Passwort");
 
         appPassword.setPasswort("Passwort");
         appPassword.setPasswort("123456");
-        appPassword.setPasswort("HalloWelt");
+        appPassword.setPasswort("AakKdngk748356#$@");
+        appPassword.checkPassword("AakKdngk748356#$@");
 
-
+        // Super Sicher
         System.out.println( appPassword.getPasswort() );
     }
 }
 /*
 Schreibe eine Passwortvalidierung.
 ToDo:
-Klasse
+-
     init
         Anforderungen setzen fuer die Passwörter
      Store
@@ -29,10 +27,6 @@ Klasse
         annehmen von Passwort mit abfrage der ANforderungen
      CheckPasswort
         prüfen ob ein passwort richtig war
-
-
-
-
 
 Lege dir ein neues Java Github Projekt an
 Überlege dir, wie die Methoden aussehen müssen.
@@ -44,7 +38,5 @@ Bonus:
 Checke, ob kleine/große Buchstaben enthalten sind
 Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
 Schaue dir auf GitHub Labs weitere Einsteigervideos an
-
-
 
  */
