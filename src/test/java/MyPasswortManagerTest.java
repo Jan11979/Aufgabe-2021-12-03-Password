@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class MyPasswortManagerTest {
 
     @Test
@@ -9,7 +10,7 @@ class MyPasswortManagerTest {
 
         assertTrue(test.setPasswort("schlecht") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.getPasswort().equals("schlecht"));
-
+/*
         assertTrue(test.setPasswort("1Besseress@sddsfdfgds@sdfgdfgdfgdfgg") == MyPasswortManager.ERROR_CODE_TOLONG );
 
 
@@ -20,18 +21,26 @@ class MyPasswortManagerTest {
         assertTrue(test.getPasswort().equals("Besseres123Passwort"));
 
         test.setSecurityMode(MyPasswortManager.SECURITY_MODE_MID);
+        assertTrue(test.setPasswort("1AaBbCcessdfsdsdfsdsdffs") == MyPasswortManager.ERROR_CODE_NO_ERROR );
+        assertTrue(test.setPasswort("1aabbcccessdfssdfsdsdffs") == MyPasswortManager.ERROR_CODE_NOCAPITELLETTER );
+
+        test.setSecurityMode(MyPasswortManager.SECURITY_MODE_STRONG);
         assertTrue(test.setPasswort("1Besseres#sdfsdsdfsdsdffs") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.setPasswort("1Besseres@sddfgdfgdfgdfgfsd") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.setPasswort("1Besseres#sdfdfgdfgdfgdfgfsd") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.setPasswort("1Besseres$sdfdfgdfgdfgdfgdfg") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.setPasswort("1Besseresdsfdfgdfgdfgdfgdfgg") == MyPasswortManager.ERROR_CODE_NOSYMBOLS );
+*/
+        test.setSecurityMode(MyPasswortManager.SECURITY_MODE_STRONG);
+
+        assertTrue(test.setPasswort("Passwort") == MyPasswortManager.ERROR_CODE_BREACHED );
+        assertTrue(test.setPasswort("12345678") == MyPasswortManager.ERROR_CODE_BREACHED );
+
 
         assertTrue(test.setPasswort("1Besseres#sdfsdsdfsdsdffs") == MyPasswortManager.ERROR_CODE_NO_ERROR );
-        assertFalse(test.checkPassword("1Besseres#sdfsdsdfsdsdffs")  );
+        assertTrue(test.checkPassword("1Besseres#sdfsdsdfsdsdffs")  );
 
-//gfhjfgj
 
-        assertTrue(test.checkPassword("Tut der Pusch Auto Test?")  );
     }
 
 }
