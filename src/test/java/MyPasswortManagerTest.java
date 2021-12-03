@@ -29,7 +29,7 @@ class MyPasswortManagerTest {
         assertTrue(test.setPasswort("1Besseres#sdfsdsdfsdsdffs") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertFalse(test.checkPassword("1Besseres#sdfsdsdfsdsdffs")  );
 
-
+//gfhjfgj
 
         assertTrue(test.checkPassword("Tut der Pusch Auto Test?")  );
     }
