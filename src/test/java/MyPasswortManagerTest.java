@@ -30,8 +30,8 @@ class MyPasswortManagerTest {
         assertFalse(test.checkPassword("1Besseres#sdfsdsdfsdsdffs")  );
 
 
-        
-        assertFalse(test.checkPassword("Tut der Pusch Auto Test?")  );
+
+        assertTrue(test.checkPassword("Tut der Pusch Auto Test?")  );
     }
 
 }
