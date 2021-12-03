@@ -10,9 +10,8 @@ class MyPasswortManagerTest {
 
         assertTrue(test.setPasswort("schlecht") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.getPasswort().equals("schlecht"));
-/*
-        assertTrue(test.setPasswort("1Besseress@sddsfdfgds@sdfgdfgdfgdfgg") == MyPasswortManager.ERROR_CODE_TOLONG );
 
+        assertTrue(test.setPasswort("1Besseress@sddsfdfgds@sdfgdfgdfgdfgg") == MyPasswortManager.ERROR_CODE_TOLONG );
 
         test.setSecurityMode(MyPasswortManager.SECURITY_MODE_LOW);
         assertTrue(test.setPasswort("Besseres@#$") == MyPasswortManager.ERROR_CODE_NONMBERS );
@@ -30,7 +29,7 @@ class MyPasswortManagerTest {
         assertTrue(test.setPasswort("1Besseres#sdfdfgdfgdfgdfgfsd") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.setPasswort("1Besseres$sdfdfgdfgdfgdfgdfg") == MyPasswortManager.ERROR_CODE_NO_ERROR );
         assertTrue(test.setPasswort("1Besseresdsfdfgdfgdfgdfgdfgg") == MyPasswortManager.ERROR_CODE_NOSYMBOLS );
-*/
+
         test.setSecurityMode(MyPasswortManager.SECURITY_MODE_STRONG);
 
         assertTrue(test.setPasswort("Passwort") == MyPasswortManager.ERROR_CODE_BREACHED );
