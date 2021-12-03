@@ -4,11 +4,14 @@ public class Main {
 
         MyPasswortManager appPassword = new MyPasswortManager( MyPasswortManager.SECURITY_MODE_NO );
 
-        appPassword.setSecurityMode(MyPasswortManager.SECURITY_MODE_LOW);
-        appPassword.setPasswort("BesseresPasswort");
-        appPassword.setPasswort("abc123");
-        appPassword.setPasswort("Besseres123Passwort");
+        appPassword.setSecurityMode(MyPasswortManager.SECURITY_MODE_STRONG);
+    //    appPassword.setPasswort("BesseresPasswort");
+    //    appPassword.setPasswort("abc123");
+    //    appPassword.setPasswort("Besseres123Passwort");
 
+        appPassword.setPasswort("Passwort");
+        appPassword.setPasswort("123456");
+        appPassword.setPasswort("HalloWelt");
 
 
         System.out.println( appPassword.getPasswort() );

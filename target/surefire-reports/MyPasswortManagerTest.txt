@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: MyPasswortManagerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in MyPasswortManagerTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.634 s <<< FAILURE! - in MyPasswortManagerTest
+MyPasswortManagerTest.shouldCalculateTwo  Time elapsed: 0.617 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: ""
+	at MyPasswortManagerTest.shouldCalculateTwo(MyPasswortManagerTest.java:36)
+
